@@ -4,6 +4,7 @@ import useLanguageSwitcher, {
   LanguageDescriptor,
 } from "@/hooks/useLanguageSwitcher";
 import React from "react";
+import Link from "next/link";
 
 export type LanguageSwitcherProps = {
   context?: NextPageContext;
@@ -26,13 +27,13 @@ export const LanguageSwitcher = ({ context }: LanguageSwitcherProps = {}) => {
             languageConfig.defaultLanguage === ld.name) ? (
             <span className="mx-3 text-orange-300">{ld.title}</span>
           ) : (
-            <a
+            <Link href=""
               onClick={switchLanguage(ld.name)}
               className="mx-3 text-blue-300 cursor-pointer hover:underline"
               role="button"
             >
               {ld.title}
-            </a>
+            </Link>
           )}
         </React.Fragment>
       ))}

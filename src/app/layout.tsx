@@ -15,12 +15,12 @@ export default function RootLayout({
         {children}
        <Script
           src="/assets/scripts/translation.js"
-          strategy="beforeInteractive"
+          strategy="beforeInteractive" async={true}
         />
       {process.env.GOOGLE_TRANSLATION_CONFIG && (
           <Script
             src="//translate.google.com/translate_a/element.js?cb=TranslateInit"
-            strategy="afterInteractive"
+            strategy="afterInteractive" async={true}
           />
         )}
       </body>

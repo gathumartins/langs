@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <div className="h-screen flex flex-col">
       <header className="w-full pt-4">
-        <LanguageSwitcher />
       </header>
       <div className="flex flex-col flex-1 overflow-auto">
         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />

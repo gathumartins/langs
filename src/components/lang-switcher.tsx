@@ -29,6 +29,7 @@ export const LanguageSwitcher = ({ context }: LanguageSwitcherProps = {}) => {
             <a
               onClick={switchLanguage(ld.name)}
               className="mx-3 text-blue-300 cursor-pointer hover:underline"
+              role="button"
             >
               {ld.title}
             </a>

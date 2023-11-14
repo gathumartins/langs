@@ -5,8 +5,6 @@ import LanguageSwitcher from '@/components/lang-switcher';
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
 }) {
   return (
     <html lang="en">
